@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Projekti - PROMi</title>
+    <!--<link rel="icon" href="img/tpicon.ico">-->
+    <link rel="stylesheet" type="text/css" href="projekti.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body class="bg-light">
+<!--
+    <div id="navbar-headline" class="navbar navbar-expand-sm bg-light border-bottom sticky-top">
+        <!-- Toggler/hamburger Button ->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" 
+        data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse"></div>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav nav-tabs mr-auto">
+            <li class="nav-item" style="display: none;" id="log-info">
+                <a class="nav-link" href="#">
+                <button type="button" id="session" class="btn btn-sm btn-success"></button>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#" id="">Projekti</a>
+            </li>
+            <li class="nav-item" id="">
+                <a class="nav-link active" href="#" id="">Naročniki</a>
+            </li>
+            <li class="nav-item" id="">
+                <a class="nav-link" href="#" id="">Nastavitve</a>
+            </li>
+            <li class="nav-item" id="">
+                <a class="nav-link" href="#" id="">Pomoč</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" id="load_kontakt">
+                    <button type="button" class="btn btn-sm btn-outline-info" 
+                    data-toggle="modal" data-target="#contact">Kontakt</button>
+                </a>
+            </li>
+            <li class="nav-item" id="login-button">
+                <a class="nav-link" href="#" id="load_login">
+                    <button type="button" class="btn btn-sm btn-outline-info" 
+                    data-toggle="modal" data-target="#prijava">Odjava</button>
+                </a>
+            </li>
+        </ul>
+        </div>
+    </div>
+-->
+
+<!--HEADLINE IME -->
+<div class="navbar navbar-light bg-light box-shadow border-bottom">
+    <div class="container d-flex justify-content-between">
+        <a class="navbar-brand d-flex aligh-items-center" href="#">
+            <h3 id="project-headline" class="m-2 text-secondary">
+                Ad Adder @</h3>
+        </a>
+        <button class="btn btn-light text-secondary" id="question-icon" title="Pomoč">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-question-circle" viewbox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 
+                1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 
+                .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 
+                2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
+            </svg>
+        </button>
+    </div>
+</div>
+
+<div class="container-fluid">
+<div class="row flex-xl-nowrap">
+    <!--LEFT SIDE NAVBAR-->
+    <div class="col-12 col-md col-xl-2 bd-sidebar">
+    <!--<div class="collapse bd-links"  style="display: block;">
+        <div class="bd-toc-item active" style="display: block;">
+            <a class="bd-toc-link" href="#" style="display: block;">PROJEKTI</a>
+        </div>
+        <div class="bd-toc-item">
+            <a class="bd-toc-link" href="#" style="display: block;">PROJEKTI</a>
+        </div>
+        <div class="bd-toc-item">
+            <a class="bd-toc-link" href="#" style="display: block;">PROJEKTI</a>
+        </div>
+        <div class="bd-toc-item">
+            <a class="bd-toc-link" href="#" style="display: block;">PROJEKTI</a>
+        </div>
+    </div>
+    -->
+    
+    <ul class="navbar-nav flex-column float-right ">
+    <strong>
+        <li class="nav-item">
+            <a class="nav-link text-secondary" href="#" id="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-card-list" viewbox="0 0 16 16">
+                    <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 
+                    3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+                    <path d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8zm0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 
+                    1-.5-.5zm0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-1-5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zM4 8a.5.5 0 1 1-1 
+                    0 .5.5 0 0 1 1 0zm0 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
+                  </svg>
+                Projekti</a>
+        </li>
+        <li class="nav-item" id="">
+            <a class="nav-link text-secondary" href="#" id="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-people-fill" viewbox="0 0 16 16">
+                    <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                    <path fill-rule="evenodd" d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z"/>
+                    <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
+                </svg>
+                Naročniki
+            </a>
+        </li>
+        <li class="nav-item" id="">
+            <a class="nav-link text-secondary" href="#" id="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-gear-fill" viewbox="0 0 16 16">
+                    <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 
+                    1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 
+                    2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 
+                    2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 
+                    0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 
+                    10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+                </svg>
+                Nastavitve
+            </a>
+        </li>
+        <li class="nav-item" id="">
+            <a class="nav-link text-secondary" href="#" id="">Pomoč</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#" id="">
+                <button type="button" class="btn btn-sm btn-outline-info" 
+                data-toggle="modal" data-target="#contact">Kontakt</button>
+            </a>
+        </li>
+        <li class="nav-item" id="">
+            <a class="nav-link" href="#" id="">
+                <button type="button" class="btn btn-sm btn-outline-danger" 
+                data-toggle="modal" data-target="#prijava">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-door-open-fill" viewbox="0 0 16 16">
+                    <path d="M1.5 15a.5.5 0 0 0 0 1h13a.5.5 0 0 0 0-1H13V2.5A1.5 1.5 0 0 0 11.5 1H11V.5a.5.5 0 0 0-.57-.495l-7 1A.5.5 0 0 0 3 
+                    1.5V15H1.5zM11 2h.5a.5.5 0 0 1 .5.5V15h-1V2zm-2.5 8c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1z"/>
+                  </svg>
+                Odjava</button>
+            </a>
+        </li>
+    </strong>
+    </ul>
+    </div>
+
+    <main class="col-12 col-md-9 col-xl-10 py-md" role="main" style="height: 90vh;">
+
+<!--Tabela
+
+        <div class="container d-flex justify-content-between">
+            <div hidden class="bg-warning" id="new-project">
+                <form class="form-inline">
+                    <input type="hidden" id="userid">
+                    <div class="form-group m-1">
+                        <input type="text" class="form-control" id="projekt-ime" placeholder="[Ime novega projekta]">
+                    </div>
+                    <div class="form-group m-1">
+                        <button  class="btn btn-success form-control" id="ustvari" >Ustvari</button>
+                    </div>
+                </form>
+            </div>
+            <div>
+                <button  id="show-form" class="btn m-2" style="background: powderblue;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-folder-plus" viewbox="0 0 16 16">
+                        <path d="m.5 3 .04.87a1.99 1.99 0 0 0-.342 1.311l.637 7A2 2 0 0 0 2.826 14H9v-1H2.826a1 1 0 0 1-.995-.91l-.637-7A1 1 0 0 1 
+                        2.19 4h11.62a1 1 0 0 1 .996 1.09L14.54 8h1.005l.256-2.819A2 2 0 0 0 13.81 3H9.828a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 
+                        6.172 1H2.5a2 2 0 0 0-2 2zm5.672-1a1 1 0 0 1 .707.293L7.586 3H2.19c-.24 0-.47.042-.683.12L1.5 2.98a1 1 0 0 1 1-.98h3.672z"/>
+                        <path d="M13.5 10a.5.5 0 0 1 .5.5V12h1.5a.5.5 0 1 1 0 1H14v1.5a.5.5 0 1 1-1 0V13h-1.5a.5.5 0 0 1 0-1H13v-1.5a.5.5 0 0 1 .5-.5z"/>
+                    </svg>
+                    Ustvari nov projekt</button>
+                <div class="columns columns-right m-2 btn-group float-right">
+                    <button class="btn btn-outline-dark">Yap</button>
+                    <button class="btn btn-outline-dark">Nop</button>
+                </div>
+            </div>
+            <div>
+                ADSPACE haha
+            </div>
+        </div>
+<!--
+        <iframe src="/table_projects.html" width="100%" height="100%"></iframe>
+        TUKI JE IFRAME ZA TABELO CONTENT HTML--------------spodaj manual ofc...--------------------
+ ->
+        <div class="container table-responsive bg-light">
+            <table class="table table-bordered table-hover table-sm" id="table">
+                <div id="data-table">
+                    <thead class="thead-light">
+                        <tr>
+                            <th scope="col" style="text-align: center;">Naziv projekta</th>
+                            <th scope="col" style="text-align: center;">Število kreativ</th>
+                            <th scope="col" style="text-align: center;">Oglasni formati</th>
+                            <th scope="col" style="text-align: center;">Naročniki</th>
+                        </tr>
+                    </thead>
+                    <tbody id="projects-table">                        
+                    </tbody>
+                </div>   
+            </table>
+        </div>
+-->
+
+        <iframe id="iframe-table" src="table_projects.html" style="border: 0;" width="100%" height="100%"></iframe>
+    </main>
+</div>
+</div>
+<footer class="text-muted border-top bg-light fixed-bottom">
+    <div class="container">
+        <p>Ad Adder Žan Pirman hmm</p>
+    </div>
+</footer>
+
+    <script src="projekti.js"></script>
+</body>
+</html>

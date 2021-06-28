@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Projekti - PROMi</title>
+    <!--<link rel="icon" href="img/tpicon.ico">-->
+    <link rel="stylesheet" type="text/css" href="projekti.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body class="bg-light">
+    <div class="container d-flex justify-content-between">
+        <div hidden class="bg-warning" id="new-project">
+            <form class="form-inline">
+                <input type="hidden" id="userid">
+                <div class="form-group m-1">
+                    <input type="text" class="form-control" id="projekt-ime" placeholder="[Ime novega projekta]">
+                </div>
+                <div class="form-group m-1">
+                    <button  class="btn btn-success form-control" id="ustvari" >Ustvari</button>
+                </div>
+            </form>
+        </div>
+        <div>
+            <button  id="show-form" class="btn m-2" style="background: powderblue;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-folder-plus" viewbox="0 0 16 16">
+                    <path d="m.5 3 .04.87a1.99 1.99 0 0 0-.342 1.311l.637 7A2 2 0 0 0 2.826 14H9v-1H2.826a1 1 0 0 1-.995-.91l-.637-7A1 1 0 0 1 
+                    2.19 4h11.62a1 1 0 0 1 .996 1.09L14.54 8h1.005l.256-2.819A2 2 0 0 0 13.81 3H9.828a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 
+                    6.172 1H2.5a2 2 0 0 0-2 2zm5.672-1a1 1 0 0 1 .707.293L7.586 3H2.19c-.24 0-.47.042-.683.12L1.5 2.98a1 1 0 0 1 1-.98h3.672z"/>
+                    <path d="M13.5 10a.5.5 0 0 1 .5.5V12h1.5a.5.5 0 1 1 0 1H14v1.5a.5.5 0 1 1-1 0V13h-1.5a.5.5 0 0 1 0-1H13v-1.5a.5.5 0 0 1 .5-.5z"/>
+                </svg>
+                Ustvari nov projekt</button>
+            <div class="columns columns-right m-2 btn-group float-right">
+                <button class="btn btn-outline-dark">Yap</button>
+                <button class="btn btn-outline-dark">Nop</button>
+            </div>
+        </div>
+        <div class="m-2">
+            <button class="btn btn-outline-dark">Hey</button>
+        </div>
+    </div>
+
+    <div class="container table-responsive bg-light">
+        <table class="table table-bordered table-hover table-sm" id="table2">
+            <div id="data-table">
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col" style="text-align: center;">Naziv projekta</th>
+                        <th scope="col" style="text-align: center;">Število kreativ</th>
+                        <th scope="col" style="text-align: center;">Oglasni formati</th>
+                        <th scope="col" style="text-align: center;">Naročniki</th>
+                    </tr>
+                </thead>
+                <tbody class="" id="projects-table">
+                </tbody>
+            </div>   
+        </table>
+    </div>
+
+    <!--<script src="table_projects.js"></script>-->
+</body>
+</html>
